@@ -1,24 +1,33 @@
-﻿<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>Welcome to Hospital</h2>
+    <p class="lead">Where Care Comes First</p>
+    @*<p><a href="http://google.com" class="btn btn-primary btn-large">Learn more &raquo;</a></p>*@
 </div>
+
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+        <img src="~/Media/12354.png" />
+        <h2>Find Doctors</h2>
+        <p>
+            Get the best in health care with the help of our highly qualified doctors. Click the button below to get started.
+        </p>
+        <p></p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Doctor")">Find Doctors &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+        <img src="~/Media/1339788964763703.jpg" />
+        <h2>Create Appointments</h2>
+        <p>Setting up appointments has never been so easy. Its just a registration and few clicks away.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Create","Appointment")">Create now &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+        <img src="~/Media/1hospital.jpg" />
+        <h2>View Statistics</h2>
+        <p>Want to know how well we are doing? Check it out yourself.</p>
+        <p><a class="btn btn-default" href="@Url.Action("About","Home")">Show Statistics &raquo;</a></p>
     </div>
 </div>
